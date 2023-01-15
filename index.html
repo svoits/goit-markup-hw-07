@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -29,6 +29,11 @@
           <!-- Logo -->
           <a href="./index.html" class="logo link"><span class="accent">WEB</span>STUDIO</a>
           <!-- Navigation menu -->
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="" width="32" height="22">
+              <use href="./images/icons.svg#burger"></use>
+            </svg>
+          </button>
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="site-nav-link current link">Studio</a>
@@ -447,7 +452,75 @@
       </div>
     </div>
 
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle mobile-close-btn js-close-menu">
+        <svg class="mobile-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link current link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li>
+          <a href="#" class="mobile-socials-link" target="_blank" rel="noreferrer noopener">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-socials-link" target="_blank" rel="noreferrer noopener">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-socials-link" target="_blank" rel="noreferrer noopener">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-socials-link" target="_blank" rel="noreferrer noopener">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <!-- JS MODAL SCRIPT -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
