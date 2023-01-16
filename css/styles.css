@@ -805,12 +805,14 @@ body {
   .logo-motto {
     margin-right: 120px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
 .footer .logo {
   display: flex;
   justify-content: center;
+  padding: 0;
 
   margin-bottom: 16px;
   margin-right: auto;
@@ -840,6 +842,12 @@ body {
 @media screen and (min-width: 768px) {
   .social {
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-bottom: 0;
   }
 }
 
@@ -891,7 +899,7 @@ body {
 
 /* SUBSCRIPTION IN FOOTER */
 
-@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .subscription {
     margin-left: 108px;
   }
