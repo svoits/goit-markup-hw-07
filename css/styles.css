@@ -230,13 +230,53 @@ body {
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-desktop/hero-bg-desktop.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-mobile/hero-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--dark);
   background-position: center;
 
   text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-mobile/hero-bg-mobile@2x.jpg);
+  }
+}
+
+/* screen >= 481px */
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-tablet/hero-bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-tablet/hero-bg-tablet@2x.jpg);
+  }
+}
+
+/* screen >= 769px */
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-desktop/hero-bg-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-desktop/hero-bg-desktop@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -687,8 +727,8 @@ body {
   }
 }
 
-.footer .container {
-}
+/* .footer .container {
+} */
 
 @media screen and (min-width: 768px) {
   .footer .container {
