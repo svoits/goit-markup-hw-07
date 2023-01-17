@@ -179,7 +179,7 @@ body {
 .site-nav-link {
   position: relative;
   display: block;
-  padding: 24px 0 27px;
+  padding: 24px 0;
 
   color: var(--dark);
   font-weight: 500;
@@ -187,6 +187,12 @@ body {
   letter-spacing: 0.02em;
 
   transition: color var(--transition-dur-and-timing);
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav-link {
+    padding: 24px 0 27px;
+  }
 }
 
 .site-nav-link:hover,
@@ -232,31 +238,38 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    margin-top: 0;
   }
+}
+
+.contacts > .item:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 1200px) {
   .contacts > .item:not(:last-child) {
     margin-right: 40px;
+    margin-bottom: 0;
   }
 }
 
 .contact {
   display: block;
 
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
 
   transition: color var(--transition-dur-and-timing);
-}
-
-.contact:not(:last-child) {
-  padding-bottom: 4px;
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
     padding: 24px 0 27px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1074,7 +1087,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 392px;
+  width: 95%;
   min-height: 576px;
 
   background-color: #fcfcfc;
@@ -1086,13 +1099,19 @@ body {
     transform var(--transition-dur-and-timing) 50ms;
 }
 
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 767.98px) {
   .backdrop {
     overflow-y: auto;
   }
@@ -1145,12 +1164,18 @@ body {
   margin-bottom: 16px;
 
   font-weight: 500;
-  font-size: 16px;
+  font-size: 3.7vw;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
 
   color: var(--dark);
+}
+
+@media screen and (min-width: 428px) {
+  .order-form-appeal {
+    font-size: 16px;
+  }
 }
 
 .order-form-group {
@@ -1243,10 +1268,16 @@ body {
 
   margin-bottom: 24px;
 
-  font-size: 12px;
+  font-size: 2.7vw;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
+}
+
+@media screen and (min-width: 428px) {
+  .order-form-agreement {
+    font-size: 12px;
+  }
 }
 
 /* Checkbox */
