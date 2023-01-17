@@ -1111,7 +1111,7 @@ body {
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 767.98px) {
+/* @media screen and (orientation: landscape) and (max-width: 767.98px) {
   .backdrop {
     overflow-y: auto;
   }
@@ -1120,7 +1120,7 @@ body {
     top: 5%;
     transform: translateX(-50%);
   }
-}
+} */
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -70%);
